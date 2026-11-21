@@ -3,8 +3,7 @@
 """
 ===============================================================================================================
 Created on:   	03/06/2019 
-Created by:   	Agustin.Lacorazza - alacorazza@primary.com.ar
-Organization: 	Primary technology
+Created by:   	Agustin Lacorazza
 Filename:     	Backup DNS Zones Route 53
 --------------------------------------------------------------------------------------------------
 Description:  Script to Backup the DNS Zones with Cli53 
@@ -19,7 +18,7 @@ today=time.strftime('%Y%m%d')
 
 
 # Path to be created
-path = ("/home/infrapmy/backupdns/"+str(today))
+path = ("/path/to/backupdns/"+str(today))
 
 os.mkdir( path, 0755 );
 os.chdir (path)
